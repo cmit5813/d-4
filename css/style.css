@@ -1,0 +1,303 @@
+@charset "UTF-8" ;
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none;color: inherit;}
+ul,li{list-style: none;}
+body{background-color: #fff;color: #333;font-size: 14px;font-family: 'TAEBAEKmilkyway';}
+
+#wrap{
+    width: 100%;
+    height: 920px;
+    /* background-color: yellowgreen; */
+}
+/* ------------------------------left------------------------------ */
+.left{
+    width: 200px;
+    height: 800px;
+    background-color: white;
+    float: left;
+}
+
+.logo{
+    text-align: center;
+    background-color: white;
+}
+
+.logo a{
+    display: inline-block;
+    width: 171px;
+    height: 115px;
+}
+
+.logo img{}
+
+.nav{}
+
+.main{
+    width: 180px;
+    margin: 20px auto 0;
+}
+.main >li{
+    position: relative;
+}
+.main >li>a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #cae1f6;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main >li:hover>a{background-color: rgb(69, 115, 168);color: white;}
+
+.sub{
+    position: absolute;
+    left: 183px; top: 0;
+    width: calc(1920px - 190px);
+    background-color: rgb(167, 220, 255);
+    display: none;
+    z-index: 100;
+}
+.sub >li{
+    display: inline-block;
+
+}
+.sub >li>a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+}
+.sub >li>a:hover{background-color: rgb(66, 134, 193);color: white;}
+
+/* ------------------------------right------------------------------ */
+.right{
+    width: calc(100% - 200px);
+    float: right;
+    height: 800px;
+    background-color: rgb(164, 237, 240);
+}
+
+.img_slide{
+    width: 100%;
+    height: 400px;
+}
+
+.move{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.move li{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0; top: 0;
+}
+.move li img{
+    height: 100%;
+    width: 100%;
+}
+
+.link{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    background-color: #cae1f6;
+    
+}
+
+.link_list{
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.link_list li{
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+    margin: 0 50px;
+}
+.link_list li a{
+    display: block;
+}
+.link_list li a img{
+    width: 100px;
+    height: 100px;
+}
+.link_list li a span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    /* border: 1px solid black; */
+}
+
+.content{
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    background-color: #DCE9F5;
+}
+
+.content div{
+    float: left;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+.content h2{
+    font-size: 18px;
+    /* background-color: #d8f9ff; */
+    background-color: #fff;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.content ul{
+    background-color: #fff;
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+}
+
+.notice{}
+.notice li{
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #444;
+}
+.notice li:hover{background: #cae1f6; color: black;}
+
+.notice li a{
+    display: block;
+    width: 75%;
+    float: left;
+}
+.notice li span{
+    float: right;
+}
+
+.gallery{
+    text-align: center;
+}
+.gallery li{
+    display: inline-block;
+    width: 100px;
+    margin: 0 55px;
+}
+.gallery li a{}
+.gallery li a img{width: 100%;}
+.gallery li a span{}
+
+.gallery img{width: 130px;height: 130px; }
+/* .gallery img:hover{opacity: 0.8;} */
+
+/* ------------------------------footer------------------------------ */
+.footer{
+    width: 100%;
+    height: 120px;
+    clear: both;
+    background-color: #bacdde;
+}
+
+.f_logo{
+    width: 200px;
+    height: 120px;
+    float: left;
+}
+
+.f_center{
+    width: calc(100% - 400px);
+    height: 120px;
+    float: left;
+}
+
+.f_menu{
+    height: 60px;
+    line-height: 60px;
+}
+.f_menu a{
+    display: inline-block;
+    padding: 0 10px;
+}
+.f_menu a::after{
+    content: "|";
+    display: inline-block;
+    padding-left: 20px;
+}
+.f_menu a:last-child:after{
+    display: none;
+}
+
+.copy{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.f_family{
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    padding-top: 60px;
+    float: right;
+}
+
+.family #fa{
+    width: 150px;
+    height: 40px;
+    /* border: 1px solid red; */
+}
+
+.popup{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    border: 5px double black;
+    padding: 20px;
+    z-index: 200;
+    display: none;
+}
+
+.popup h3{
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup p{
+    padding-top: 20px;
+    line-height: 2;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup .close{
+    padding: 3px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
